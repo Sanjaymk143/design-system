@@ -1,0 +1,31 @@
+.heading {
+  color: var(--ds-color-text-primary);
+
+  font-weight: var(--ds-font-weight-bold);
+
+  line-height: 1.2;
+}
+
+.h1 {
+  font-size: var(--ds-font-size-5xl);
+}
+
+.h2 {
+  font-size: var(--ds-font-size-4xl);
+}
+
+.h3 {
+  font-size: var(--ds-font-size-3xl);
+}
+
+.h4 {
+  font-size: var(--ds-font-size-2xl);
+}
+
+.h5 {
+  font-size: var(--ds-font-size-xl);
+}
+
+.h6 {
+  font-size: var(--ds-font-size-lg);
+}
