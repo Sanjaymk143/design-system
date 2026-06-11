@@ -1,31 +1,40 @@
 import {
-  Container,
-  Grid,
-  Stack,
-} from "../../components/layout";
+  Button,
+  Heading,
+} from "../../components/foundation";
 
 import {
-  Heading,
-  Text,
-} from "../../components/foundation";
+  Container,
+  Stack,
+} from "../../components/layout";
 
 export const Playground = () => {
   return (
     <Container>
       <Stack gap="lg">
         <Heading level={1}>
-          Design System Playground
+          Button Testing
         </Heading>
 
-        <Text size="lg">
-          Testing Layout Primitives
-        </Text>
+        <Button>
+          Primary Button
+        </Button>
 
-        <Grid columns={3}>
-          <div>Card 1</div>
-          <div>Card 2</div>
-          <div>Card 3</div>
-        </Grid>
+        <Button variant="secondary">
+          Secondary Button
+        </Button>
+
+        <Button variant="danger">
+          Danger Button
+        </Button>
+
+        <Button loading>
+          Save
+        </Button>
+
+        <Button fullWidth>
+          Full Width
+        </Button>
       </Stack>
     </Container>
   );

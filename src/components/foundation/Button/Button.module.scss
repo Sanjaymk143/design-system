@@ -1,0 +1,79 @@
+.button {
+  border: none;
+
+  border-radius:
+    var(--ds-radius-md);
+
+  cursor: pointer;
+
+  font-family:
+    var(--ds-font-family-primary);
+
+  font-weight:
+    var(--ds-font-weight-medium);
+
+  transition: all 250ms ease;
+}
+
+.sm {
+  padding:
+    var(--ds-spacing-sm)
+    var(--ds-spacing-md);
+
+  font-size:
+    var(--ds-font-size-sm);
+}
+
+.md {
+  padding:
+    var(--ds-spacing-md)
+    var(--ds-spacing-lg);
+
+  font-size:
+    var(--ds-font-size-md);
+}
+
+.lg {
+  padding:
+    var(--ds-spacing-lg)
+    var(--ds-spacing-xl);
+
+  font-size:
+    var(--ds-font-size-lg);
+}
+
+.primary {
+  background:
+    var(--ds-color-primary);
+
+  color: white;
+}
+
+.primary:hover {
+  background:
+    var(--ds-color-primary-hover);
+}
+
+.secondary {
+  background:
+    var(--ds-color-secondary);
+
+  color: white;
+}
+
+.danger {
+  background:
+    var(--ds-color-danger);
+
+  color: white;
+}
+
+.button:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+.fullWidth {
+  width: 100%;
+}
