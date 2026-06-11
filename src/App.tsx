@@ -1,20 +1,7 @@
-import {
-  Heading,
-  Text,
-} from "./components/foundation";
+import { Playground } from "./pages/Playground";
 
 function App() {
-  return (
-    <>
-      <Heading level={1}>
-        Design System
-      </Heading>
-
-      <Text size="lg">
-        Typography foundation is working.
-      </Text>
-    </>
-  );
+  return <Playground />;
 }
 
 export default App;
