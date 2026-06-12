@@ -1,12 +1,12 @@
 import {
   Button,
   Heading,
-} from "../../components/foundation";
+} from "@/components/foundation";
 
 import {
   Container,
   Stack,
-} from "../../components/layout";
+} from "@/components/layout";
 
 export const Playground = () => {
   return (
