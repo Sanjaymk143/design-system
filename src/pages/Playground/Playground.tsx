@@ -2,7 +2,7 @@ import {
   Button,
   Heading,
 } from "@/components/foundation";
-
+import { Label } from "@/components/forms";
 import {
   Container,
   Stack,
@@ -35,6 +35,22 @@ export const Playground = () => {
         <Button fullWidth>
           Full Width
         </Button>
+      </Stack>
+      <Stack gap="md">
+        <Label htmlFor="name">
+          Name
+        </Label>
+
+        <Label
+          htmlFor="email"
+          required
+        >
+          Email Address
+        </Label>
+
+        <Label disabled>
+          Disabled Label
+        </Label>
       </Stack>
     </Container>
   );
