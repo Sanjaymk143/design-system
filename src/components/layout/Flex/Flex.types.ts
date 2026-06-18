@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { HTMLAttributes, ReactNode } from "react";
 
 export type Justify =
   | "start"
@@ -12,12 +12,12 @@ export type Align =
   | "end"
   | "stretch";
 
-export interface FlexProps {
+export interface FlexProps extends HTMLAttributes<HTMLDivElement> {
   children?: ReactNode;
 
   justify?: Justify;
 
   align?: Align;
 
-  className?: string;
+  // className?: string;
 }

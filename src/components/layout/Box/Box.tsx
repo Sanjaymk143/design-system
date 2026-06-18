@@ -7,6 +7,7 @@ import type { BoxProps } from "./Box.types";
 export const Box = ({
   children,
   className,
+  ...props
 }: BoxProps) => {
   return (
     <div
@@ -14,6 +15,7 @@ export const Box = ({
         styles.box,
         className
       )}
+      {...props}
     >
       {children}
     </div>

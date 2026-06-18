@@ -8,6 +8,7 @@ export const Grid = ({
   children,
   columns = 2,
   className,
+  ...props
 }: GridProps) => {
   return (
     <div
@@ -18,6 +19,7 @@ export const Grid = ({
         styles.grid,
         className
       )}
+      {...props}
     >
       {children}
     </div>

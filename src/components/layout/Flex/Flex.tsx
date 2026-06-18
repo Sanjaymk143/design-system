@@ -9,6 +9,7 @@ export const Flex = ({
   justify = "start",
   align = "stretch",
   className,
+  ...props
 }: FlexProps) => {
   return (
     <div
@@ -18,6 +19,7 @@ export const Flex = ({
         styles[`align-${align}`],
         className
       )}
+      {...props}
     >
       {children}
     </div>

@@ -1,6 +1,6 @@
-import type { ReactNode } from "react";
+import type { HTMLAttributes, ReactNode } from "react";
 
-export interface ContainerProps {
+export interface ContainerProps extends HTMLAttributes<HTMLDivElement> {
   children?: ReactNode;
-  className?: string;
+  // className?: string;
 }

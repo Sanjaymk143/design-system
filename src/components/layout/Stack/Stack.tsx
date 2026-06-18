@@ -8,6 +8,7 @@ export const Stack = ({
   children,
   gap = "md",
   className,
+  ...props
 }: StackProps) => {
   return (
     <div
@@ -16,6 +17,7 @@ export const Stack = ({
         styles[`gap-${gap}`],
         className
       )}
+      {...props}
     >
       {children}
     </div>

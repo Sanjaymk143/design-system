@@ -7,6 +7,7 @@ import type { ContainerProps } from "./Container.types";
 export const Container = ({
   children,
   className,
+  ...props
 }: ContainerProps) => {
   return (
     <div
@@ -14,6 +15,7 @@ export const Container = ({
         styles.container,
         className
       )}
+      {...props}
     >
       {children}
     </div>

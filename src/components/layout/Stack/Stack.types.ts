@@ -1,12 +1,12 @@
-import type { ReactNode } from "react";
+import type { HTMLAttributes, ReactNode } from "react";
 
 export type StackGap =
   | "sm"
   | "md"
   | "lg";
 
-export interface StackProps {
+export interface StackProps extends HTMLAttributes<HTMLDivElement> {
   children?: ReactNode;
   gap?: StackGap;
-  className?: string;
+  // className?: string;
 }
