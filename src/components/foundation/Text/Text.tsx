@@ -8,13 +8,15 @@ export const Text = ({
   children,
   size = "md",
   className,
+  ...props
 }: TextProps) => {
   return (
     <p
       className={clsx(
         styles.text,
         styles[size],
-        className
+        className,
+        {...props}
       )}
     >
       {children}

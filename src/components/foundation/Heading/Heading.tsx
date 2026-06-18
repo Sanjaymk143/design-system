@@ -9,6 +9,7 @@ export const Heading = ({
   children,
   level = 1,
   className,
+  ...props
 }: HeadingProps) => {
   const Tag = `h${level}` as ElementType;
 
@@ -17,7 +18,8 @@ export const Heading = ({
       className={clsx(
         styles.heading,
         styles[`h${level}`],
-        className
+        className,
+        {...props}
       )}
     >
       {children}

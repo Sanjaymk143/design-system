@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { HTMLAttributes, ReactNode } from "react";
 
 export type TextSize =
   | "xs"
@@ -7,7 +7,7 @@ export type TextSize =
   | "lg"
   | "xl";
 
-export interface TextProps {
+export interface TextProps extends HTMLAttributes<HTMLParagraphElement> {
   children: ReactNode;
   size?: TextSize;
   className?: string;
