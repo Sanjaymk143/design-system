@@ -4,6 +4,7 @@ import type {
 } from "@storybook/react-vite";
 
 import { Label } from "./Label";
+import { Input } from "../Input";
 
 const meta = {
   title: "Forms/Label",
@@ -79,5 +80,20 @@ export const Showcase: Story = {
         Email Address
       </Label>
     </div>
+  ),
+};
+
+export const Accessibility: Story = {
+  render: () => (
+    <>
+      <Label htmlFor="username">
+        Username
+      </Label>
+
+      <Input
+        id="username"
+        placeholder="Enter username"
+      />
+    </>
   ),
 };

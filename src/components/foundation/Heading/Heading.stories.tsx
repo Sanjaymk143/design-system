@@ -80,5 +80,20 @@ export const H6: Story = {
   },
 };
 
-export const Playground: Story =
-  {};
+export const Accessibility: Story = {
+  render: () => (
+    <>
+      <Heading level={1}>
+        Page Title
+      </Heading>
+
+      <Heading level={2}>
+        Section Title
+      </Heading>
+
+      <Heading level={3}>
+        Sub Section
+      </Heading>
+    </>
+  ),
+};

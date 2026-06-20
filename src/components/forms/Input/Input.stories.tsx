@@ -4,6 +4,7 @@ import type {
 } from "@storybook/react-vite";
 
 import { Input } from "./Input";
+import { Label } from "../Label";
 
 const meta = {
   title: "Forms/Input",
@@ -95,6 +96,26 @@ export const Showcase: Story = {
         fullWidth
         placeholder="Full Width Input"
       />
+    </div>
+  ),
+};
+
+export const Accessibility: Story = {
+  render: () => (
+    <div>
+      <Label htmlFor="email">
+        Email Address
+      </Label>
+
+      <Input
+        id="email"
+        type="email"
+        aria-describedby="email-help"
+      />
+
+      <p id="email-help">
+        Enter your work email address.
+      </p>
     </div>
   ),
 };

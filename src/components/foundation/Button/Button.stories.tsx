@@ -116,3 +116,10 @@ export const Showcase: Story = {
     </div>
   ),
 };
+
+export const Accessibility: Story = {
+  args: {
+    children: "Save Changes",
+    "aria-label": "Save Changes",
+  },
+};
