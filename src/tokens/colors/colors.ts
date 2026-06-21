@@ -1,14 +1,29 @@
 export const colors = {
-  primary: "#2563EB",
-  primaryHover: "#1D4ED8",
+  primary: {
+    50: "#eff6ff",
+    100: "#dbeafe",
+    500: "#2563eb",
+    700: "#1d4ed8",
+  },
 
-  secondary: "#64748B",
+  success: {
+    50: "#f0fdf4",
+    100: "#dcfce7",
+    500: "#22c55e",
+    700: "#15803d",
+  },
 
-  success: "#22C55E",
-  warning: "#F59E0B",
-  danger: "#EF4444",
-  info: "#0EA5E9",
+  warning: {
+    50: "#fffbeb",
+    100: "#fef3c7",
+    500: "#f59e0b",
+    700: "#b45309",
+  },
 
-  white: "#FFFFFF",
-  black: "#000000",
-} as const;
+  danger: {
+    50: "#fef2f2",
+    100: "#fee2e2",
+    500: "#ef4444",
+    700: "#b91c1c",
+  },
+};

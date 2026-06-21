@@ -3,11 +3,11 @@
   align-items: center;
   gap: 0.25rem;
 
-  font-size: var(--font-size-sm);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-normal);
+  font-size: var(--ds-font-size-sm);
+  font-weight: var(--ds-font-weight-medium);
+  line-height: var(--ds-line-height-normal);
 
-  color: var(--color-text-primary);
+  color: var(--ds-color-text-primary);
 
   cursor: pointer;
 
@@ -17,6 +17,6 @@
   }
 
   &__required {
-    color: var(--color-danger);
+    color: var(--ds-color-danger);
   }
 }
