@@ -1,0 +1,27 @@
+.card {
+  background: var(--ds-color-surface);
+  border-radius: var(--ds-radius-md);
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.card--bordered {
+  border: 1px solid var(--ds-color-border);
+}
+
+.card--elevated {
+  box-shadow: var(--ds-shadow-md);
+}
+
+.padding-sm {
+  padding: var(--ds-spacing-sm);
+}
+
+.padding-md {
+  padding: var(--ds-spacing-md);
+}
+
+.padding-lg {
+  padding: var(--ds-spacing-lg);
+}
