@@ -2,8 +2,8 @@
   background: var(--ds-color-surface);
   border-radius: var(--ds-radius-md);
   transition:
-    box-shadow 0.2s ease,
-    border-color 0.2s ease;
+    box-shadow var(--ds-motion-fast) var(--ds-easing-standard),
+    border-color var(--ds-motion-fast) var(--ds-easing-standard);
 }
 
 .card--bordered {

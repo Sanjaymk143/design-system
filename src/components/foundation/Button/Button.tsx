@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/utils/cn";
 
 import styles from "./Button.module.scss";
 
@@ -16,14 +16,11 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={clsx(
+      className={cn(
         styles.button,
         styles[variant],
         styles[size],
-        {
-          [styles.fullWidth]:
-            fullWidth,
-        },
+        { [styles.fullWidth]: fullWidth },
         className
       )}
       disabled={disabled || loading}

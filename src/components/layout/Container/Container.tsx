@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/utils/cn";
 
 import styles from "./Container.module.scss";
 
@@ -11,10 +11,7 @@ export const Container = ({
 }: ContainerProps) => {
   return (
     <div
-      className={clsx(
-        styles.container,
-        className
-      )}
+      className={cn(styles.container, className)}
       {...props}
     >
       {children}

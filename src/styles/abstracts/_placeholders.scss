@@ -1,10 +1,10 @@
 %surface {
-  background-color: white;
+  background-color: var(--ds-color-surface);
   border-radius: var(--ds-radius-md);
   box-shadow: var(--ds-shadow-sm);
 }
 
 %interactive {
   cursor: pointer;
-  transition: all var(--ds-motion-normal, 250ms) ease;
+  transition: all var(--ds-motion-normal) var(--ds-easing-standard);
 }

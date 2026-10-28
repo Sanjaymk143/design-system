@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/utils/cn";
 
 import styles from "./Stack.module.scss";
 
@@ -12,11 +12,7 @@ export const Stack = ({
 }: StackProps) => {
   return (
     <div
-      className={clsx(
-        styles.stack,
-        styles[`gap-${gap}`],
-        className
-      )}
+      className={cn(styles.stack, styles[`gap-${gap}`], className)}
       {...props}
     >
       {children}

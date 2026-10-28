@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/utils/cn";
 
 import styles from "./Spinner.module.scss";
 
@@ -13,11 +13,7 @@ export const Spinner = ({
     <div
       role="status"
       aria-label="Loading"
-      className={clsx(
-        styles.spinner,
-        styles[size],
-        className
-      )}
+      className={cn(styles.spinner, styles[size], className)}
       {...props}
     />
   );

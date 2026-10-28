@@ -1,7 +1,7 @@
 .label {
   display: inline-flex;
   align-items: center;
-  gap: 0.25rem;
+  gap: var(--ds-spacing-xs);
 
   font-size: var(--ds-font-size-sm);
   font-weight: var(--ds-font-weight-medium);

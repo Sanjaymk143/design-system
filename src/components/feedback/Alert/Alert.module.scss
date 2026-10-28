@@ -16,25 +16,25 @@
 }
 
 .info {
-  background: rgb(14 165 233 / 10%);
-  color: var(--ds-color-info);
-  border-color: var(--ds-color-info);
+  background: var(--ds-color-info-50);
+  color: var(--ds-color-info-700);
+  border-color: var(--ds-color-info-500);
 }
 
 .success {
-  background: rgb(34 197 94 / 10%);
-  color: var(--ds-color-success);
-  border-color: var(--ds-color-success);
+  background: var(--ds-color-success-50);
+  color: var(--ds-color-success-700);
+  border-color: var(--ds-color-success-500);
 }
 
 .warning {
-  background: rgb(245 158 11 / 10%);
-  color: var(--ds-color-warning);
-  border-color: var(--ds-color-warning);
+  background: var(--ds-color-warning-50);
+  color: var(--ds-color-warning-700);
+  border-color: var(--ds-color-warning-500);
 }
 
 .danger {
-  background: rgb(239 68 68 / 10%);
-  color: var(--ds-color-danger);
-  border-color: var(--ds-color-danger);
+  background: var(--ds-color-danger-50);
+  color: var(--ds-color-danger-700);
+  border-color: var(--ds-color-danger-500);
 }

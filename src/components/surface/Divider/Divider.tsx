@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/utils/cn";
 
 import styles from "./Divider.module.scss";
 
@@ -11,11 +11,7 @@ export const Divider = ({
 }: DividerProps) => {
   return (
     <hr
-      className={clsx(
-        styles.divider,
-        styles[`divider--${orientation}`],
-        className
-      )}
+      className={cn(styles.divider, styles[`divider--${orientation}`], className)}
       {...props}
     />
   );

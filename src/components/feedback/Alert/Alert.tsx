@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/utils/cn";
 
 import styles from "./Alert.module.scss";
 
@@ -14,11 +14,7 @@ export const Alert = ({
   return (
     <div
       role="alert"
-      className={clsx(
-        styles.alert,
-        styles[variant],
-        className
-      )}
+      className={cn(styles.alert, styles[variant], className)}
       {...props}
     >
       {title && (

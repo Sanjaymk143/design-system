@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: var(--ds-radius-full);
   background: var(--ds-color-secondary);
   color: white;
   font-weight: var(--ds-font-weight-semibold);
@@ -12,19 +12,19 @@
 .avatar--sm {
   width: 32px;
   height: 32px;
-  font-size: 12px;
+  font-size: var(--ds-font-size-xs);
 }
 
 .avatar--md {
   width: 40px;
   height: 40px;
-  font-size: 14px;
+  font-size: var(--ds-font-size-sm);
 }
 
 .avatar--lg {
   width: 56px;
   height: 56px;
-  font-size: 18px;
+  font-size: var(--ds-font-size-lg);
 }
 
 .image {

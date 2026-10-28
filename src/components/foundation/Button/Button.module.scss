@@ -12,7 +12,7 @@
   font-weight:
     var(--ds-font-weight-medium);
 
-  transition: all 250ms ease;
+  transition: all var(--ds-motion-normal) var(--ds-easing-standard);
 }
 
 .sm {

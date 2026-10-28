@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/utils/cn";
 
 import styles from "./Box.module.scss";
 
@@ -11,10 +11,7 @@ export const Box = ({
 }: BoxProps) => {
   return (
     <div
-      className={clsx(
-        styles.box,
-        className
-      )}
+      className={cn(styles.box, className)}
       {...props}
     >
       {children}

@@ -1,9 +1,6 @@
 body {
   font-family: var(--ds-font-family-primary);
-
   font-size: var(--ds-font-size-md);
-
-  line-height: 1.5;
-
+  line-height: var(--ds-line-height-normal);
   color: var(--ds-color-text-primary);
 }

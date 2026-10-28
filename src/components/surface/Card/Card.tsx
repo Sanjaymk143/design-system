@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/utils/cn";
 
 import styles from "./Card.module.scss";
 
@@ -14,12 +14,10 @@ export const Card = ({
 }: CardProps) => {
   return (
     <div
-      className={clsx(
+      className={cn(
         styles.card,
-        bordered &&
-          styles["card--bordered"],
-        elevated &&
-          styles["card--elevated"],
+        bordered && styles["card--bordered"],
+        elevated && styles["card--elevated"],
         styles[`padding-${padding}`],
         className
       )}

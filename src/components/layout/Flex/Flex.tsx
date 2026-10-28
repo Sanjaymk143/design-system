@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/utils/cn";
 
 import styles from "./Flex.module.scss";
 
@@ -13,7 +13,7 @@ export const Flex = ({
 }: FlexProps) => {
   return (
     <div
-      className={clsx(
+      className={cn(
         styles.flex,
         styles[`justify-${justify}`],
         styles[`align-${align}`],

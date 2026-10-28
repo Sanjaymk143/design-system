@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/utils/cn";
 
 import styles from "./Grid.module.scss";
 
@@ -15,10 +15,7 @@ export const Grid = ({
       style={{
         gridTemplateColumns: `repeat(${columns}, 1fr)`,
       }}
-      className={clsx(
-        styles.grid,
-        className
-      )}
+      className={cn(styles.grid, className)}
       {...props}
     >
       {children}

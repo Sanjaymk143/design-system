@@ -1,7 +1,7 @@
 .input {
   width: auto;
   min-height: 40px;
-  padding: 0.75rem 1rem;
+  padding: var(--ds-spacing-sm) var(--ds-spacing-md);
   border: 1px solid var(--ds-color-border);
   border-radius: var(--ds-radius-md);
   background-color: var(--ds-color-surface);
@@ -9,13 +9,13 @@
   font-size: var(--ds-font-size-sm);
   line-height: var(--ds-line-height-normal);
   transition:
-    border-color 0.2s ease,
-    box-shadow 0.2s ease;
+    border-color var(--ds-motion-fast) var(--ds-easing-standard),
+    box-shadow var(--ds-motion-fast) var(--ds-easing-standard);
 
   &:focus {
     outline: none;
     border-color: var(--ds-color-primary);
-    box-shadow: 0 0 0 3px rgb(59 130 246 / 15%);
+    box-shadow: 0 0 0 3px var(--ds-color-primary-100);
   }
 
   &:disabled {

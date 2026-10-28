@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/utils/cn";
 
 import styles from "./Avatar.module.scss";
 
@@ -12,6 +12,8 @@ export const Avatar = ({
   className,
   ...props
 }: AvatarProps) => {
+
+  
   const initials = name
     ?.split(" ")
     .map((part) => part[0])
@@ -21,7 +23,7 @@ export const Avatar = ({
 
   return (
     <div
-      className={clsx(
+      className={cn(
         styles.avatar,
         styles[`avatar--${size}`],
         className

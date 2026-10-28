@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/utils/cn";
 
 import styles from "./Text.module.scss";
 
@@ -12,12 +12,8 @@ export const Text = ({
 }: TextProps) => {
   return (
     <p
-      className={clsx(
-        styles.text,
-        styles[size],
-        className,
-        {...props}
-      )}
+      className={cn(styles.text, styles[size], className)}
+      {...props}
     >
       {children}
     </p>

@@ -14,8 +14,7 @@ interface Props {
 export const ThemeProvider = ({
   children,
 }: Props) => {
-  const [theme, setTheme] =
-    useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>("light");
 
   useEffect(() => {
     document.documentElement.setAttribute(

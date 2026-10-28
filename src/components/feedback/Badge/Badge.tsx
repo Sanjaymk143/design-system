@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import { cn } from "@/utils/cn";
 
 import styles from "./Badge.module.scss";
 
@@ -12,11 +12,7 @@ export const Badge = ({
 }: BadgeProps) => {
   return (
     <span
-      className={clsx(
-        styles.badge,
-        styles[variant],
-        className
-      )}
+      className={cn(styles.badge, styles[variant], className)}
       {...props}
     >
       {children}

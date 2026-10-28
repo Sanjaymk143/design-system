@@ -1,5 +1,6 @@
-import clsx from "clsx";
 import type { ElementType } from "react";
+
+import { cn } from "@/utils/cn";
 
 import styles from "./Heading.module.scss";
 
@@ -15,12 +16,8 @@ export const Heading = ({
 
   return (
     <Tag
-      className={clsx(
-        styles.heading,
-        styles[`h${level}`],
-        className,
-        {...props}
-      )}
+      className={cn(styles.heading, styles[`h${level}`], className)}
+      {...props}
     >
       {children}
     </Tag>
