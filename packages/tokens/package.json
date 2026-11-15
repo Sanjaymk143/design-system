@@ -1,0 +1,9 @@
+{
+  "name": "@pondy/design-tokens",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Framework-independent CSS tokens from the Pondy Design System",
+  "files": ["tokens.css", "README.md"],
+  "exports": { "./tokens.css": "./tokens.css" },
+  "sideEffects": ["*.css"]
+}

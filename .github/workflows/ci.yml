@@ -31,6 +31,12 @@ jobs:
       - name: Run Lint
         run: npm run lint
 
+      - name: Validate Token Package
+        run: npm run check:tokens
+
+      - name: Check Token Package Contents
+        run: npm pack ./packages/tokens --dry-run
+
       - name: Run Tests
         run: npm run test -- --run
 
